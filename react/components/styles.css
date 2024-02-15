@@ -1,0 +1,87 @@
+.container {
+  background    : black;
+  z-index       : 4;
+  position      : relative;
+  width         : 100%;
+  height        : 100vh;
+  display       : flex;
+  align-items   : center;
+  flex-direction: column;
+  padding-top   : 6rem;
+}
+
+.container .searchBarInnerContainer :global(.vtex-input-prefix__group) {
+  border        : .125rem solid white;
+  border-radius : 2rem;
+  flex-direction: row-reverse;
+  height        : 3rem;
+}
+
+.container .searchBarInnerContainer input,
+.container .searchBarInnerContainer input+span {
+  background: black;
+}
+
+.container .searchBarInnerContainer input {
+  color  : white;
+  padding: 0;
+}
+
+.container .searchBarInnerContainer .searchBarIcon {
+  color  : white;
+  padding: 0;
+}
+
+.container .searchBarInnerContainer .resultsList {
+  background: black;
+  border    : none;
+  height    : 30rem;
+  margin-top: .25rem;
+  overflow-y: scroll;
+}
+
+.container .searchBarInnerContainer .resultsList::-webkit-scrollbar {
+  background: black;
+  width     : .25rem;
+}
+
+.container .searchBarInnerContainer .resultsList::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
+  background   : white;
+}
+
+.container .searchBarInnerContainer .resultsList li a {
+  color          : white;
+  list-style     : none;
+  text-decoration: none;
+}
+
+.container .searchBarInnerContainer .resultsList li[aria-selected="true"] a {
+  background: black;
+}
+
+.container-select {
+  max-width    : 47rem;
+  width        : 100%;
+  background   : black;
+  padding      : .75rem;
+  border-radius: 2rem;
+  border       : .125rem solid white;
+  position     : relative;
+}
+
+.select {
+  outline   : none;
+  width     : 100%;
+  background: black;
+  color     : white;
+  appearance: none;
+  border    : none;
+}
+
+.select--icon {
+  color   : white;
+  position: absolute;
+  top     : calc(50% - .5rem);
+  right   : 1rem
+}

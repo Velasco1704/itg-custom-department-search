@@ -77,7 +77,7 @@ El código consta de dos componentes principales: `DepartmentSearch` y `Departme
 
 El componente `DepartmentSearch` es un componente que se encarga de renderizar una barra de búsqueda y un grupo de departamentos.
 
-```jsx
+```tsx
 import { useQuery } from 'react-apollo';
 import QUERY_VALUES from '../graphql/getDepartmentGroup.graphql';
 import DepartmentGroup from './DepartmentGroup';
@@ -119,7 +119,7 @@ El componente `DepartmentSearch` también utiliza el hook `useQuery` para realiz
 
 El componente `DepartmentGroup` es un componente de React que renderiza un grupo de departamentos en forma de lista desplegable.
 
-```jsx
+```tsx
 import React from 'react';
 import { useCssHandles } from 'vtex.css-handles';
 import { FaArrowDown } from "react-icons/fa6";
